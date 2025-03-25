@@ -1,12 +1,10 @@
 # Projeto Gerador de FakeUser
 O projeto consiste em usar uma API pública para geração de usuário fictício com informações como: nome, email, imagem, estado, país, entre outras.
 ## Design do projeto
-<<<<<<< HEAD
 ![alt text](image.png)
 =======
 ![alt text](image-1.png)
 
->>>>>>> abeb315686f7c8088cc85a8b4c5625600ab1867b
 
 ## API Utilizada
 A API utilizada foi a https://randomouser.me/ que fornece informações de usuário através de um JSON conforme abaixo:
