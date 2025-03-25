@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.boxsearch {
+    background-color: rgba(34, 236, 101, 0.726);
+    padding: 10px;
+    text-align: center;
+}
+h1 {
+    color: rgb(24, 96, 24);
+    padding: 20px;
+    text-shadow: 0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 32px #fff;
+}
+.formUser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+}
+.allUsers {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    flex-wrap: wrap; /* faz os elementos quebrarem linhas ao invés de sobrepor*/ 
+    padding: 20px;
+}
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(34, 236, 101, 0.726);
+    border-radius: 8px;
+    padding: 15px;
+    gap: 10px;
+    width: 300px;
+    height: auto;
+    background-color: rgb(239, 244, 248);
+    margin-bottom: 15px;
+}
+.user img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Garante que a imagem sempre fique ajustada*/
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.info span {
+    font-size: 14px;
+    color: #333;
+    word-wrap: break-word;/* Evita que palavras longas quebrem o layout*/
+    max-width: 100%;
+    text-align: center;
+}
+button {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(24, 96, 24);
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid rgb(24, 96, 24);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.5),
+                0 0 20px rgba(0, 255, 136, 0.3),
+                0 0 30px rgba(0, 255, 136, 0.2);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+}
+button:hover {
+    background-color: rgb(24, 96, 24);
+    color: aliceblue;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.7),
+                0 0 30px rgba(0, 255, 136, 0.5),
+                0 0 40px rgba(0, 255, 136, 0.3);
+    cursor: pointer;
+}
+button:focus {
+    outline: none;
+    border: 2px solid rgb(0, 255, 136);
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.6);
+}
+/* Estilo básico para os botões de rádio */
+input[type="radio"] {
+    width: 18px; /* Tamanho do botão */
+    height: 18px; /* Tamanho do botão */
+    border: 2px solid rgb(24, 96, 24); /* Cor da borda verde */
+    border-radius: 50%; /* Deixa o botão redondo */
+    background-color: white; /* Cor de fundo */
+    transition: all 0.3s ease; /* Transição suave */
+    appearance: none; /* Remove a aparência padrão do botão */
+    outline: none; /* Remove o contorno do botão */
+}
+
+/* Efeito de foco para quando o botão está selecionado */
+input[type="radio"]:checked {
+    background-color: rgb(2, 95, 50); /* Cor de fundo quando selecionado */
+    border-color: rgb(34, 121, 77); /* Cor da borda quando selecionado */
+}
+
+/* Adiciona um efeito visual quando o mouse passa sobre o botão */
+input[type="radio"]:hover {
+    border-color: rgb(6, 72, 6); /* Cor da borda quando o mouse passa sobre o botão */
+    box-shadow: 0 0 5px rgba(14, 217, 126, 0.5); /* Efeito de brilho */
+}

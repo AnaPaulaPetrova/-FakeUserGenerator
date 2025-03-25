@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador FakeUser</title>
+</head>
+<body> 
+    <div class="boxsearch">
+        <h1>Gerador de FakeUsers</h1>
+        <div class="formUser">
+            <span><b>Gênero:</b></span>
+                <input value="" type="radio" name="gender" checked/> Aleatório <!-- "checked" marca um opcão -->
+                <input value="male" type="radio" name="gender" /> Homem  <!-- value recebe o valor que esta na api, ex.: male (gênero)-->
+                <input value="female" type="radio" name="gender" /> Mulher
+
+            <span><b>Nacionalidade</b></span>
+                <select id="natUsers">
+                    <option value="br">Brasil</option>
+                    <option value="mx">México</option>
+                    <option value="es">Espanha</option>
+                    <option value="us">Estados Unidos</option>
+                    <option value="fr">França</option>
+                    <option value="fi">Filandia</option>
+                    <option value="in">India</option>
+                </select>
+    
+        <span><b>Quantidade</b></span>
+            <select id="quantUsers">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+        <button onclick="generateFakerUsers()">Gerar Usuário</button>
+    </div>
+</div>
+    <hr>
+    <div class="allUsers">
+        <div class="user">
+            <img width="100" src="https://as1.ftcdn.net/jpg/04/66/44/64/1000_F_466446411_VYFCWgiDL7LkWsdcRaG3aX8aCfe7jpMu.jpg" alt="">
+            <div class="info">
+                <span><b>Nome: </b> Ana</span>
+                <span><b>Email: </b>ana@gmail.com</span>
+                <span><b>Nascimento: </b>23/02</span>
+                <span><b>Idade: </b>25  </span>
+                <span><b>Cidade: </b> Russas</span>
+                <span><b>Estado: </b> Ceará</span>
+                <span><b>País: </b>Brazil</span>
+                <span><b>Telefone: </b>(88) 99212-1234</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>
